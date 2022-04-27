@@ -1,0 +1,10 @@
+pipeline{
+agent any 
+stages{
+stage ("Jenkins hello world") {
+steps {echo 'running python file'
+bat 'python Jenkins_file.py'
+}
+}
+}
+}
